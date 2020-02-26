@@ -1,6 +1,6 @@
 import os
 from pyads import ADS
-path = '/'
+path = '.'
 
 streams = []
 files = []
@@ -16,7 +16,7 @@ for f in files:
 	# Zone.Identifier is a common ADS, containing information from where a specific file is downloaded.
 			if stream == "Zone.Identifier": 
 				continue
-			print("Found ADS stream in following file(s):")
+			print("Found ADS stream in following file:")
 			print(f)
 			print("Containing following stream:")
 			print(stream)
